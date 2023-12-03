@@ -1,5 +1,5 @@
 body {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     display: flex;
@@ -7,14 +7,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 h1 {
     color: white;
 }
+
 a {
     color: white;
     font-size: 28px;
     text-decoration: none;
 }
+
 .container-full {
     display: flex;
     align-items: center;
@@ -24,10 +27,17 @@ a {
     background-color: #217E84;
 }
 
-.container{
-    width: 1164px;
+.container {
+    max-width: 1160px;
+    width: 100%;
     background-color: rgb(170, 168, 168);
-    height: 1000px;
+    height: 100%;
+
+}
+
+.container button {
+    margin-left: 36px;
+    margin-top: 36px;
 }
 
 .btn-geral {
@@ -35,6 +45,19 @@ a {
     height: 50px;
     background-color: #124F53;
     color: white;
-    border:none;
+    border: none;
     border-radius: 6px;
+}
+
+.title-section {
+    font-size: 52px;
+    padding: 36px;
+
+}
+
+.title-section>.line {
+    height: 10px;
+    width: 160px;
+    border-radius: 12px;
+    background: #124F53;
 }
