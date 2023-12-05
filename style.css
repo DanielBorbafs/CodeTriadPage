@@ -30,7 +30,7 @@ a {
 .container {
     max-width: 1160px;
     width: 100%;
-    background-color: rgb(170, 168, 168);
+   
     height: 100%;
 
 }
@@ -41,7 +41,7 @@ a {
 }
 
 .btn-geral {
-    width: 140px;
+    width: 150px;
     height: 50px;
     background-color: #124F53;
     color: white;
@@ -61,3 +61,22 @@ a {
     border-radius: 12px;
     background: #124F53;
 }
+
+/* SECTION NAVBAR */
+#navbar {
+    background-color: rgb(134, 22, 168);
+}
+#navbar h1{
+    color: rgb(255, 254, 254);
+}
+
+#btn-navbar {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(134, 22, 168);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+
