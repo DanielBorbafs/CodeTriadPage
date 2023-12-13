@@ -166,7 +166,7 @@ h6 {
 #intro {
   width: 100%;
   position: relative;
-  background: linear-gradient(180deg, #555455 20%, rgba(93, 92, 94, 0.83) 60%, rgba(26, 25, 25, 0.9) 100%);
+  background: linear-gradient(180deg, #494949 20%, rgb(75, 75, 75) 60%, rgb(58, 56, 56) 100%);
   background-size: cover;
   padding: 200px 0 120px 0;
 }
@@ -1132,6 +1132,22 @@ h6 {
 
 #footer .credits a:hover {
   color: #f1f7ff;
+}
+
+.btn-contato{
+  background-color: var(--colormain--);
+  font-family: montserrat;
+  font-weight: 500;
+  color: #ffffff;
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-contato:hover{
+  background: #0062cc;
 }
 
 /*--------------------------------------------------------------
