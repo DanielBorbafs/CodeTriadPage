@@ -51,9 +51,7 @@ h6 {
 
 .back-to-top {
   position: fixed;
-  display: none;
   background: var(--colormain--);
-  color: #fff;
   width: 44px;
   height: 44px;
   text-align: center;
@@ -67,8 +65,10 @@ h6 {
 }
 
 .back-to-top i {
-  padding-top: 12px;
-  color: #fff;
+  width: 20px;
+  height: 20px;
+  padding-top: 1rem;
+  color: #ffffff;
 }
 
 /* Prelaoder - vou tentar colocar o logo ou o nome da codetriad */
