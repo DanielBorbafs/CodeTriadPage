@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,0"
+  />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div class="sidebar-inner">
+        <header class="sidebar-header">
+          <button
+            type="button"
+            class="sidebar-burger"s
+            onclick="toggleSidebar()"
+          ></button>
+          <img src="./assets/logo.png" class="sidebar-logo" />
+        </header>
+        <nav class="sidebar-menu">
+         
+          <button onclick="handleHeaderClicked('settings')" id="expanded" class="has-border">
+            <span class="material-symbols-outlined"> settings </span>
+            <span>Alunos</span>
+            <span class="material-symbols-outlined" id="icon"> expand_more </span>
+          </button>
+          <div id="settings" class="subnav">
+            <div class="subnav-inner">
+              <button>
+                <span class="sub-item">Notas</span>
+              </button>
+              <button>
+                <span class="sub-item">Presenças</span>
+              </button>
+            </div>
+          </div>
+          <button type="button" >
+            <img src="./assets/icon-home.svg" />
+            <span>Home</span>
+          </button>
+        </nav>
+      </div>
+    </nav>
+    <script src="main.js"></script>
+    <script type="text/javascript">
+      const toggleSidebar = () => document.body.classList.toggle("open");
+    </script>
+  </body>
+</html>

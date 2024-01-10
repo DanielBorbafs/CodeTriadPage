@@ -73,6 +73,10 @@ a{
     gap: 5rem;
 }
 
+.btn:hover{
+    background-color: #6B2E87;
+}
+
 @media(width > 835px ) {
     .body-main{
         display: flex;
@@ -99,5 +103,15 @@ a{
         display: block;
         font-size: 32px;
         margin-bottom: 2rem;
+    }
+
+    .btn{
+        width: 220px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .btn i {
+        font-size: 20px;
     }
 }  
