@@ -22,43 +22,64 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <nav class="sidebar">
-      <div class="sidebar-inner">
-        <header class="sidebar-header">
-          <button
-            type="button"
-            class="sidebar-burger"s
-            onclick="toggleSidebar()"
-          ></button>
-          <img src="./assets/logo.png" class="sidebar-logo" />
-        </header>
-        <nav class="sidebar-menu">
-         
-          <button onclick="handleHeaderClicked('settings')" id="expanded" class="has-border">
-            <span class="material-symbols-outlined"> settings </span>
-            <span>Alunos</span>
-            <span class="material-symbols-outlined" id="icon"> expand_more </span>
-          </button>
-          <div id="settings" class="subnav">
-            <div class="subnav-inner">
-              <button>
-                <span class="sub-item">Notas</span>
-              </button>
-              <button>
-                <span class="sub-item">Presenças</span>
-              </button>
+    <header>
+      <nav class="sidebar">
+        <div class="sidebar-inner">
+          <header class="sidebar-header">
+            <button
+              type="button"
+              class="sidebar-burger"s
+              onclick="toggleSidebar()"
+            ></button>
+            <img src="./assets/logo.png" class="sidebar-logo" />
+          </header>
+          <nav class="sidebar-menu">
+            <button onclick="handleHeaderClicked('settings')" id="expanded" class="has-border">
+              <span class="material-symbols-outlined"> settings </span>
+              <span>Alunos</span>
+              <span class="material-symbols-outlined" id="icon"> expand_more </span>
+            </button>
+            <div id="settings" class="subnav">
+              <div class="subnav-inner">
+                <button>
+                  <span class="sub-item">Notas</span>
+                </button>
+                <button>
+                  <span class="sub-item">Presenças</span>
+                </button>
+              </div>
             </div>
-          </div>
-          <button type="button" >
-            <img src="./assets/icon-home.svg" />
-            <span>Home</span>
-          </button>
-        </nav>
+            <button type="button" >
+              <img src="./assets/icon-home.svg" />
+              <span>Home</span>
+            </button>
+          </nav>
+        </div>
+      </nav>
+      <div class="container">
+        <h1>teste
+          
+        </h1>
       </div>
-    </nav>
-    <script src="main.js"></script>
+    </header>
+
+    <main class="main">
+      <section class="profile-header">
+       <div class="nome-perfil">
+        <h1>Fulano de tal</h1>
+       </div>
+       <div class="img-profile">
+        <img src="assets/profile.png" alt="imagem de perfil" class="img-perfil">
+       </div>
+      </section>
+      
+    </main>
+
+    <script src="script.js"></script>
     <script type="text/javascript">
       const toggleSidebar = () => document.body.classList.toggle("open");
+      
     </script>
+    <script></script>
   </body>
 </html>
