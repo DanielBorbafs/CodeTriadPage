@@ -1164,6 +1164,32 @@ h6 {
 # Responsive Media Queries
 --------------------------------------------------------------*/
 
+@media (max-width: 1200px) {
+  #intro {
+    width: 100%;
+    position: relative;
+    background: #000000;
+    background-size: cover;
+    padding: 200px 0 120px 0;
+
+  }
+
+  #intro .intro-img {
+    width: 50%;
+    float: left;
+  }
+
+  #intro .intro-info {
+    margin-left: 1rem;
+    width: 45%;
+    float: right;
+    width: 440px;
+
+
+  }
+
+}
+
 @media (min-width: 992px) {
   #testimonials .testimonial-item p {
     width: 80%;
