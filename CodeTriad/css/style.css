@@ -309,6 +309,7 @@ h6 {
   transition: ease all 0.3s;
 }
 
+
 .main-nav .drop-down:hover>ul {
   opacity: 1;
   top: 100%;
@@ -598,10 +599,34 @@ h6 {
   font-size: 24px;
 }
 
+
 /* Services Section
 --------------------------------*/
+.section-header-services{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 
+.section-header-services h3{
+  text-align: center;
+  font-size: 32px;
+  z-index: 1;
+  font-weight: 700;
+  color: #dbdbdb;
+  
+}
 
+.line{
+  width: 140px;
+  height: 5px;
+  background-color: var(--colormain--);
+  bottom: 25%;
+  justify-content: center;
+  position: absolute;
+  border-radius: 8px;
+
+}
 
 
 .blob {
@@ -615,7 +640,7 @@ border-radius: 50%;
 background-color: purple;
 opacity: 1;
 filter: blur(16px);
-animation: blob-bounce 4s infinite ease;
+animation: blob-bounce 3s infinite ease;
 }
 
 @keyframes blob-bounce {
@@ -648,14 +673,16 @@ transform: translate(-100%, -100%) translate3d(0, 0, 0);
   padding: 30px;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border: 0.5px solid rgba(231, 242, 245, 0.164);
+  border-radius: 8px;
   margin: 0 10px 40px 10px;
-
+  
   transition: all 0.3s ease-in-out;
 }
 .box{
   display: flex;
   flex-direction: column;
+  
 }
 
 #services .box:hover {
@@ -682,8 +709,14 @@ transform: translate(-100%, -100%) translate3d(0, 0, 0);
   font-size: 18px;
 }
 
-#services .title a {
-  color: var(--colorgray--);
+.services-box .box > h4{
+  color: #ffffffdc;
+}
+
+.services-box .box > p {
+  color: #ffffff;
+  font-family: montserrat;
+  font-size: 14px;
 }
 
 #services .box:hover .title a {
