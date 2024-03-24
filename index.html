@@ -8,7 +8,7 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
   <!-- Favicons -->
-  <link href="codeTriad/img/logo/logopage.svg" rel="icon">
+  <link href="CodeTriad/img/logo/logopage.svg" rel="icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- Google Fonts -->
@@ -32,10 +32,10 @@
   Header
   ============================-->
   <header id="header" class="fixed-top header-scrolled">
-    <div class="container">
+    <div class="container ">
 
       <div class="logo float-left">
-        <a href="#intro" class="scrollto"><img src="CodeTriad/img/gerais/loogo.png" alt="" class="img-fluid"></a>
+        <a href="#intro" class="scrollto"><img src="CodeTriad/img/gerais/loogo.png" alt="" class="img-fluid mb-1"></a>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
@@ -67,10 +67,9 @@
         <p class="subtitle">
           Aqui onde sua idéia vira resultado, estamos dedicados a impulsionar o sucesso online de nossos clientes
         </p>
-        <div>
-          <a href="#about" class="btn-get-started scrollto">Saiba Mais <i class="fa-solid fa-arrow-right"></i></a>
-          <a href="#services" class="btn-services scrollto">Serviços</a>
-        </div>
+    
+        <a href="#about" class="btn-saibamais scrollto"><button id="btns-hero">Saiba mais <i class="fa-solid fa-arrow-right"></i></button></a>
+        <a href="#services" class="btn-services ml-4 scrollto">Serviços</a>
       </div>
       <div class="shadow">
         <img src="CodeTriad/img/gerais/luz.png" alt="">
@@ -94,12 +93,7 @@
 
         <div class="row about-container">
 
-          <div class="col-lg-6 content order-lg-1 order-2">
-            <p>
-              Nossa equipe de especialistas em consultoria de T.I. está dedicada a identificar e implementar soluções
-              inovadoras que alinham perfeitamente com suas metas de negócios. Confiabilidade, eficiência e resultados
-              mensuráveis são os pilares que sustentam nossa abordagem.
-            </p>
+          <div class="col-lg-6 content order-lg-1 order-2" id="sobre">
 
             <div class="icon-box wow fadeInUp">
               <div class="icon"><i class="fa-regular fa-clock"></i></div>
@@ -110,16 +104,16 @@
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
               <div class="icon"><i class="fa-solid fa-headphones-simple"></i></div>
-              <h4 class="title"><a href="">Suporte 24h</a></h4>
-              <p class="description"> Oferecemos suporte técnico 24 horas, 7 dias por semana, garantindo que sua empresa
-                esteja sempre amparada. Seja para resolver questões urgentes ou para orientações estratégicas</p>
+              <h4 class="title"><a href="">Suporte </a></h4>
+              <p class="description"> Oferecemos suporte, garantindo que sua empresa
+                esteja sempre amparada. Seja para resolver questões urgentes ou para orientações estratégicas!</p>
             </div>
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
               <div class="icon"><i class="fa-solid fa-microchip"></i></div>
               <h4 class="title"><a href="">Tecnologias atualizadas</a></h4>
-              <p class="description">Possuímos especialização em diversas áreas, desde infraestrutura até desenvolimento
-                de sistemas, garantimos que sua empresa tenha acesso a um conhecimento abrangente e atualizado</p>
+              <p class="description">Possuímos especialização em diversas áreas, desde infraestrutura até desenvolvimento
+                de sistemas, garantimos que sua empresa tenha acesso a um conhecimento abrangente e atualizado.</p>
             </div>
 
           </div>
@@ -129,27 +123,6 @@
           </div>
         </div>
 
-        <div class="row about-extra">
-          <div class="col-lg-6 wow fadeInUp">
-            <img src="CodeTriad/img/gerais/img-about.svg" alt="">
-          </div>
-          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-            <h4>Impulsione sua empresa</h4>
-            <p>
-              Não apenas oferecemos consultoria de T.I, oferecemos parceria estratégica para impulsionar seu negócio.
-              Com uma equipe altamente qualificada, soluções personalizadas, compromisso com prazos e suporte 24h,
-              garantimos não apenas a resolução de desafios tecnológicos, mas a construção de um alicerce sólido para o
-              crescimento sustentável da sua empresa.
-            <p>
-              Transforme desafios em oportunidades e confie na nossa experiência para elevar sua infraestrutura
-              tecnológica a novos patamares. Juntos, construiremos o futuro digital da sua empresa.
-            </p>
-          </div>
-        </div>
-
-
-
-      </div>
     </section>
 
     <!--==========================
@@ -170,30 +143,39 @@
               <h4 class="title" style="cursor: pointer;">Landing Pages</h4>
               <p class="description">Precisa de páginas de alta conversão? Oferecemos o serviço com o design mais
                 moderno e atualizado do mercado.</p>
+                <div class="blob"></div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
-            <div class="box">
-              <div class="icon"><i class="bx bx-code-alt" style="color: #3fcdc7;"></i></div>
-              <h4 class="title" style="cursor: pointer;">Desenvolvimento de sistemas</h4>
-              <p class="description">Desenvolvemos sistemas com base nas necessidades dos clientes, utilizando as
-                melhores tecnologias do mercado.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            
             <div class="box">
               <div class="icon"><i class="bx bx-pen" style="color: #7e08c2;"></i></div>
               <h4 class="title" style="cursor: pointer;">UI design</h4>
               <p class="description">Destaque-se com nossos serviços de UI/UX design, criando interfaces envolventes e
                 funcionais que elevam a experiência do usuário.
                 Garantindo que seus produtos digitais se destaquem pela usabilidade e estética. </p>
+                <div class="blob"></div>
             </div>
+
           </div>
-
+            <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box">
+                <div class="icon"><i class="bx bx-code-alt" style="color: #3fcdc7;"></i></div>
+                <h4 class="title" style="cursor: pointer;">Desenvolvimento de sistemas</h4>
+                <p class="description">Desenvolvemos sistemas com base nas necessidades dos clientes, utilizando as
+                  melhores tecnologias do mercado.</p>
+                  <div class="blob"></div>
+              </div>
+              <div class="box">
+                <div class="icon"><i class='bx bx-trending-up' style="color: #0fa41e;"></i></div>
+                <h4 class="title" style="cursor: pointer;">Gestão de Tráfego</h4>
+                <p class="description">Na nossa empresa, nós nos especializamos em oferecer soluções de gestão de tráfego
+                  que são personalizadas para atender às demandas únicas de cada cliente. Utilizamos as mais avançadas
+                  tecnologias disponíveis no mercado.</p>
+                  <div class="blob"></div>
+              </div>
+            </div>
         </div>
-
       </div>
-    </section><!-- #services -->
+    </section>
 
     <!--==========================
       Projetos Section
@@ -210,7 +192,7 @@
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-web">Web</li>
-              <li data-filter=".filter-app">App</li>
+              <!--<li data-filter=".filter-app">App</li>--->
               <li data-filter=".filter-card">Outros</li>
 
             </ul>
@@ -219,138 +201,35 @@
 
         <div class="row portfolio-container">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="CodeTriad/img/projetos/app01.svg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="CodeTriad/img/projetos/app01.svg" data-lightbox="portfolio" data-title="App 1"
-                    class="link-preview" title="Preview"><i class="fa-regular fa-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class='bx bx-link-alt'></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <img src="CodeTriad/img/projetos/web01.svg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4><a href="#">Clínica</a></h4>
-                <p>Sistema Web (Agendamento)</p>
+                <p>SISTEMA DE AGENDAMENTO DE CONSULTAS MÉDICAS</p>
                 <div>
                   <a href="img/projetos/web01.svg" class="link-preview" data-lightbox="portfolio" data-title="Web 3"
                     title="Preview"><i class="fa-regular fa-eye"></i></a>
-                  <a href="https://codetriad.net/clinica/#" class="link-details" title="More Details"><i
+                  <a href="https://codetriad.net/clinica/#" class="link-details" title="More Details" target="_blank"><i
                       class='bx bx-link-alt'></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="CodeTriad/img/projetos/web02.svg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 2</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="CodeTriad/img/projetos/web02.svg" class="link-preview" data-lightbox="portfolio"
-                    data-title="App 2" title="Preview"><i class="fa-regular fa-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class='bx bx-link-alt'></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="CodeTriad/img/projetos/web03.svg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 2</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="CodeTriad/img/projetos/web03.svg" class="link-preview" data-lightbox="portfolio"
-                    data-title="Card 2" title="Preview"><i class="fa-regular fa-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class='bx bx-link-alt'></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="CodeTriad/img/projetos/web03.svg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Barbearia</a></h4>
-                <p>Sistema</p>
-                <div>
-                  <a href="CodeTriad/img/projetos/web03.svg" class="link-preview" data-lightbox="portfolio"
-                    data-title="Web 2" title="Preview"><i class="fa-regular fa-eye"></i></a>
-                  <a href="https://codetriad.net/barbearia/" class="link-details" title="More Details"><i
-                      class='bx bx-link-alt'></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="CodeTriad/img/projetos/web02.svg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 3</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="CodeTriad/img/projetos/web03.svg" class="link-preview" data-lightbox="portfolio"
-                    data-title="App 3" title="Preview"><i class="fa-regular fa-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class='bx bx-link-alt'></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="CodeTriad/img/projetos/web03.svg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 1</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="CodeTriad/img/projetos/web02.svg" class="link-preview" data-lightbox="portfolio"
-                    data-title="Card 1" title="Preview"><i class="fa-regular fa-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class='bx bx-link-alt'></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="CodeTriad/img/projetos/web02.svg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 3</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="CodeTriad/img/projetos/web02.svg" class="link-preview" data-lightbox="portfolio"
-                    data-title="Card 3" title="Preview"><i class="fa-regular fa-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class='bx bx-link-alt'></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <img src="CodeTriad/img/projetos/web02.svg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">Web 1</a></h4>
-                <p>Wsdab</p>
+                <h4><a href="#">Barbearia</a></h4>
+                <p>Sistema de agendamento de barbearia</p>
                 <div>
                   <a href="CodeTriad/img/projetos/web02.svg" class="link-preview" data-lightbox="portfolio"
                     data-title="Web 1" title="Preview"><i class="fa-regular fa-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class='bx bx-link-alt'></i></a>
+                  <a href="https://barbearia.codetriad.net/barbearia" class="link-details" title="More Details"
+                    target="_blank"><i class='bx bx-link-alt'></i></a>
                 </div>
               </div>
             </div>
@@ -488,7 +367,7 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Redes sociais</h4>
             <p>
-              <strong>Telefone:</strong> +111111<br>
+              <strong>Telefone:</strong> (27) 996211792<br>
               <strong>Email:</strong> contato@codetriad.net<br>
             </p>
 
@@ -528,7 +407,7 @@
   <script src="CodeTriad/lib/lightbox/js/lightbox.min.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+  <script src="CodeTriad/"></script>
 
 
 

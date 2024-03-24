@@ -2,7 +2,6 @@
 # Filtros gerais
 --------------------------------------------------------------*/
 
-
 :root {
   --colormain--: #6B2E87;
   --colorgray--: #2f3944;
@@ -127,7 +126,7 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
-  height: 80px;
+  height: 70px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
@@ -164,6 +163,11 @@ h6 {
   margin-top: 60px;
 }
 
+.nav-menus  {
+  display: flex;
+  justify-content: space-around;
+  
+}
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -172,6 +176,10 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.shadow img{
+  width: 100%;
 }
 
 #intro {
@@ -245,6 +253,9 @@ h6 {
   border-color: var(--colorsecondary--);
   color: #fff;
 }
+
+
+
 
 /*--------------------------------------------------------------
 #Menu de navegação
@@ -455,7 +466,6 @@ h6 {
 --------------------------------*/
 
 .section-header h3 {
-
   font-size: 36px;
   color: var(--colorgray--);
   text-align: center;
@@ -476,11 +486,12 @@ h6 {
 --------------------------------*/
 
 .section-bg {
-  background: #ecf5ff;
+    background-color: #000000;
 }
 
 /* Sobre secão
 --------------------------------*/
+
 
 #about {
   background: rgb(255, 255, 255);
@@ -492,7 +503,9 @@ h6 {
 }
 
 #about .about-container .content {
-  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -573,6 +586,13 @@ h6 {
   padding-top: 60px;
 }
 
+.about-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 #about .about-extra h4 {
   font-weight: 600;
   font-size: 24px;
@@ -581,6 +601,44 @@ h6 {
 /* Services Section
 --------------------------------*/
 
+
+
+
+.blob {
+position: absolute;
+z-index: 1;
+top: 100%;
+left: 0%;
+width: 100%;
+height: 10px;
+border-radius: 50%;
+background-color: purple;
+opacity: 1;
+filter: blur(16px);
+animation: blob-bounce 4s infinite ease;
+}
+
+@keyframes blob-bounce {
+0% {
+transform: translate(-100%, -100%) translate3d(0, 0, 0);
+}
+
+25% {
+transform: translate(-100%, -100%) translate3d(0, 0, 0);
+}
+
+50% {
+transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+}
+
+75% {
+transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+}
+
+100% {
+transform: translate(-100%, -100%) translate3d(0, 0, 0);
+}
+}
 #services {
   padding: 60px 0 40px 0;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.219);
@@ -592,9 +650,12 @@ h6 {
   overflow: hidden;
   border-radius: 10px;
   margin: 0 10px 40px 10px;
-  background: #fff;
-  box-shadow: 0 10px 30px 0 var(--colorbasicblue--);
+
   transition: all 0.3s ease-in-out;
+}
+.box{
+  display: flex;
+  flex-direction: column;
 }
 
 #services .box:hover {
@@ -1160,6 +1221,114 @@ h6 {
   background: #0062cc;
 }
 
+
+
+#btns-hero {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7d2ae8;
+  transition: all 0.2s ease;
+}
+
+#btns-hero:active {
+  transform: scale(0.96);
+}
+
+#btns-hero:before,
+#btns-hero:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+#btns-hero:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+#btns-hero:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.bnts-intro {
+  display: flex;
+  background-color: red;
+}
+
+
+
+#btns-hero i {
+  margin-left: 8px;
+}
+
+
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
@@ -1224,9 +1393,7 @@ h6 {
     text-align: center;
   }
 
-  #why-us .card {
-    margin: 0;
-  }
+
 }
 
 @media (max-width: 768px) {
