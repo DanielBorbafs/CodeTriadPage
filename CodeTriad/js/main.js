@@ -1,4 +1,20 @@
 
+const text = "Serviços"; // Texto que será digitado
+let index = 0;
+const textElement = document.getElementById('typing-effect');
+
+function type() {
+  textElement.textContent = text.slice(0, index++);
+  if (index <= text.length) {
+    setTimeout(type, 200); // Ajuste a velocidade de digitação conforme necessário (em milissegundos)
+  }
+}
+
+type();
+
+type();
+
+type();
 
 (function ($) {
   "use strict";

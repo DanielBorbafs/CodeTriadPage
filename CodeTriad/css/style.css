@@ -602,10 +602,13 @@ h6 {
 
 /* Services Section
 --------------------------------*/
+
+
 .section-header-services{
   position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .section-header-services h3{
@@ -619,7 +622,7 @@ h6 {
 
 .line{
   width: 140px;
-  height: 5px;
+  height: 2px;
   background-color: var(--colormain--);
   bottom: 25%;
   justify-content: center;
@@ -635,9 +638,9 @@ z-index: 1;
 top: 100%;
 left: 0%;
 width: 100%;
-height: 10px;
+height: 16px;
 border-radius: 50%;
-background-color: purple;
+background-color: rgb(161, 9, 161);
 opacity: 1;
 filter: blur(16px);
 animation: blob-bounce 3s infinite ease;
